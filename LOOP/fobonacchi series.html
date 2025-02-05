@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>while Loop</h1>
+    <script>
+        let first = 0;
+        let secind = 1;
+        let i = 1;
+        let n = parseInt(prompt("Enter N"));
+
+        while (i <= n) {
+            document.write(first+" ");
+            let nextNum = first + secind;
+            first = secind;
+            secind = nextNum;
+            i++;
+        }
+    </script>
+    <h1>For Loop</h1>
+    <script>
+        let num1 = 0;
+        let num2 = 1;
+        let j =1 ;
+        let p = parseInt(prompt("Enter P"));
+        for(let j = 1; j <= p; j++) 
+    {
+        document.write(num1+" ");
+        let temp = num1 + num2;
+        num1 = num2;
+        num2 = temp;
+    }
+    </script>
+
+    <h1>Do-While Loop</h1>
+    <script>
+        let min =0;
+        let max = 1;
+        let k = 1;
+        let q = parseInt(prompt("Enter Q"));
+        do {
+            document.write(min+" ");
+            let next = min + max;
+            min = max;
+            max = next;
+            k++;
+        } while (k<=q);
+    </script>
+</body>
+</html>
