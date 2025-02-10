@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Look at this series: 14, 28, 20, 40, 32, 64, ...</p>
+    <script>
+        
+
+        let begin=14
+
+        document.write(begin+"  ")
+
+        for(let i=1;i<=10;i++)
+        {
+           if(i%2==1)
+            {
+                begin*=2
+                document.write(begin+"  ")
+            }
+            else
+            {
+                
+                begin-=8
+                document.write(begin+"  ")
+
+            }
+
+            }
+        
+    </script>
+</body>
+</html>

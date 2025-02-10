@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Look at this series: 31, 29, 24, 22, 17, ...</p>
+    <script>
+        
+
+        let begin=31
+
+        document.write(begin+"  ")
+
+        for(let i=1;i<=10;i++)
+        {
+        if(i%2==0)
+        {
+            begin-=5
+            document.write(begin+"  ")
+        }
+
+        else
+        {
+            
+            begin-=2
+            document.write(begin +"  ")
+
+        }
+        }
+    </script>
+</body>
+</html>
