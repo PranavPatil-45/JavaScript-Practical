@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+
+function sum(num1,num2)
+{
+    document.write("Addition of Number "+ num1+" " + "and " + num2 +" is " + (num1+num2) + "<br><hr>");
+}
+
+function sub(num1,num2)
+{
+    document.write("Subtraction of Number "+ num1+" " + "and " + num2 +" is " + (num1-num2) + "<br><hr>");
+}
+
+function mult(num1,num2)
+{
+    document.write("Multipication of Number "+ num1+" " + "and " + num2 +" is " + (num1*num2) + "<br><hr>   ");
+}
+
+function div(num1,num2)
+{
+    document.write("Division of Number "+ num1+" " + "and " + num2 +" is " + (num1/num2) + "<br><hr>");
+}
+
+function mod(num1,num2)
+{
+    document.write("Module of Number "+ num1+" " + "and " + num2 +" is " + (num1%num2) + "<br><hr>");
+}
+
+ 
+{
+    let num1 = prompt("Enter first Number :- ")
+    let num2 = prompt("Enter second Number :- ")
+    num1=parseInt(num1);
+    num2=parseInt(num2);
+
+    let choice = prompt("Enter a sign among  (- , * , / , + , % ) :- ");
+
+    switch(choice)
+    {
+        case "+" : 
+        document.write = sum(num1,num2)
+        break;
+
+        case "-" : 
+        document.write = sub(num1,num2)
+        break;
+
+        case "*" : 
+        document.write = mult(num1,num2)
+        break;
+
+        case "/" : 
+        document.write = div(num1,num2)
+        break;
+
+        case "%" : 
+        document.write = mod(num1,num2)
+        break;
+
+        default : document.write("Enter valid sign !")
+    }
+
+}
+
+    </script>
+</body>
+</html>

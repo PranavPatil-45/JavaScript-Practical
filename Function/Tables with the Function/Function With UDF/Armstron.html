@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function armstrong(n)
+        {
+            let result=0;
+            let temp=n;
+            let count = 0;
+            while(temp>0)
+        {
+            temp=Math.floor(temp/10);
+           
+            count++;
+        }
+        temp=n;
+
+        for(let i=0;i<count;i++)
+        {
+            let last =temp%10;
+            let multi =1;
+            for(let j=1;j<=count;j++)
+        {
+            multi*=last;
+        }
+       
+        result+=multi;
+        temp=Math.floor(temp/10);
+        }
+
+        document.write("<br>");
+            if(n==result)
+        {
+            document.write("This Is Armstrong NUmber");
+        }
+        else
+        {
+            document.write("This Is Not Armstrong Number");
+        }
+        }
+        armstrong(153)
+
+
+        
+
+    </script>
+</body>
+</html>
