@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+        numBers = [98,45,2,76,33];
+
+        let min = numBers[0];
+
+        for(let i = 1; i < numBers.length; i++){
+            if(numBers[i] < min)
+            {
+                min = numBers[i];
+            }
+        }
+        document.write("The minimum number is: " + min + "<br>");
+
+    </script>
+</body>
+</html>
