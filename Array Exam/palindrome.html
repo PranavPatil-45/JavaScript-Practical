@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Check Palindrome </title>
+</head>
+<body>
+    <h1>Check The String Is palindrome or not</h1>
+
+    <script>
+
+             let name =prompt("Enter The Srting");
+             rsvname = "";
+
+                for(i=name.length-1;i>=0; i--)
+            {
+                rsvname += name[i];
+            }
+            if(name==rsvname)
+            {
+                document.write(name+" "+" "+ " is palindrome name");
+            }
+            else
+            {
+                document.write(name+" "+" "+ " is not palindrome name");
+            }
+
+    </script>
+</body>
+</html>
